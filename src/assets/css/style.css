@@ -262,11 +262,13 @@ a:focus {
     position: relative;
     text-align: right;
     padding-right: 75px;
+    padding-bottom: 75px;
 }
 
 .hero .hero-image img {
     max-width: 80%;
     max-height: 80%;
+    border-radius: 22px;
 }
 
 .hero .hero-content {
@@ -287,10 +289,19 @@ a:focus {
 
 .hero .hero-text h1 {
     color: #ffffff;
-    font-size: 60px;
+    /* font-size: 60px; */
     font-weight: 700;
     letter-spacing: 3px;
     margin-bottom: 15px;
+}
+
+.hero .hero-text h5 {
+    color: #ffffff;
+    /* font-size: 60px; */
+    /* font-weight: 700; */
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    margin-top: 2px;
 }
 
 .hero .hero-text h2 {
@@ -474,7 +485,6 @@ a:focus {
 .about {
     position: relative;
     width: 100%;
-    margin: -45px 0 45px 0;
 }
 
 .about .col-lg-6 {

@@ -9,6 +9,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { MyServicesComponent } from './components/my-services/my-services.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
+import { MyPortfolioNavComponent } from './components/my-portfolio/my-portfolio-nav/my-portfolio-nav.component';
+import { MyPortfolioItemComponent } from './components/my-portfolio/my-portfolio-item/my-portfolio-item.component';
+import { MyPortfolioContainerComponent } from './components/my-portfolio/my-portfolio-container/my-portfolio-container.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
     FooterComponent,
     HeaderComponent,
     MyServicesComponent,
-    HeroSectionComponent
+    HeroSectionComponent,
+    MyPortfolioNavComponent,
+    MyPortfolioItemComponent,
+    MyPortfolioContainerComponent
   ],
   imports: [
     BrowserModule

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-me.component.css']
 })
 export class AboutMeComponent {
-
+ description:string = "Salah Eddine ABID, Software Engineer specializing in web and mobile app development. Proficient in Spring Boot, React, Angular, and Flutter. Passionate about crafting seamless digital experiences that drive innovation and empower users."; 
 }
