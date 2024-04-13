@@ -1,14 +1,16 @@
-<!-- Portfolio Start -->
-<div class="portfolio" id="portfolio">
-    <div class="container">
-      <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-        <p>My Portfolio</p>
-        <h2>My Excellent Portfolio</h2>
-      </div>
-      <app-my-portfolio-nav ></app-my-portfolio-nav>
-      <div class="row portfolio-container">
-        <app-my-portfolio-container></app-my-portfolio-container>
+<!-- Portfolio Start --><div class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+      <p>My Portfolio</p>
+      <h2>My Excellent Portfolio</h2>
+    </div>
+    <app-my-portfolio-nav (filter)="applyFilter($event)"></app-my-portfolio-nav>
+    <div class="row portfolio-container">
+      <div *ngFor="let item of portfolioItems" [attr.data-wow-delay]="item.delay">
+        <app-my-portfolio-item class="portfolio-wrap" [item]="item"></app-my-portfolio-item>
       </div>
     </div>
   </div>
+</div>
   <!-- Portfolio End -->
+ 

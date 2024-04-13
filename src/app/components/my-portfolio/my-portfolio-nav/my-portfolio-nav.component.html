@@ -1,9 +1,9 @@
 <div class="row">
-    <div class="col-12">
-      <ul id="portfolio-filter">
-        <li (click)="filterItems('*')" class="filter-active">All</li>
-        <li (click)="filterItems('WD')">Web development</li>
-        <li (click)="filterItems('MA')">Mobile Apps</li>
-      </ul>
-    </div>
+  <div class="col-12">
+    <ul id="portfolio-filter">
+      <li (click)="filter.emit('*')" [class.filter-active]="selectedFilter === '*'">All</li>
+      <li (click)="filter.emit('WD')" [class.filter-active]="selectedFilter === 'WD'">Web development</li>
+      <li (click)="filter.emit('MA')" [class.filter-active]="selectedFilter === 'MA'">Mobile Apps</li>
+    </ul>
   </div>
+</div>

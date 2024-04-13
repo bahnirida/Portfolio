@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-my-portfolio-container',
@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-portfolio-container.component.css']
 })
 export class MyPortfolioContainerComponent {
-  portfolioItems = [
-    { title: 'eCommerce Website', imageUrl: '/assets/img/portfolio-1.jpg', filter: 1, delay: '0.0s' },
-    // Add other portfolio items here
-  ];
-
-  constructor() { }
+  @Input() portfolioItems : any;
 }

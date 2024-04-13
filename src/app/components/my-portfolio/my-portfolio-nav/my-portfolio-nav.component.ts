@@ -8,9 +8,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class MyPortfolioNavComponent {
   @Output() categorySelected = new EventEmitter<string>();
 
-  constructor() { }
-
-  filterItems(category: string) {
+  selectCategory(category: string) {
     this.categorySelected.emit(category);
   }
 }
