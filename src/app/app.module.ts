@@ -12,6 +12,7 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
 import { MyPortfolioNavComponent } from './components/my-portfolio/my-portfolio-nav/my-portfolio-nav.component';
 import { MyPortfolioItemComponent } from './components/my-portfolio/my-portfolio-item/my-portfolio-item.component';
 import { MyPortfolioContainerComponent } from './components/my-portfolio/my-portfolio-container/my-portfolio-container.component';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MyPortfolioContainerComponent } from './components/my-portfolio/my-port
     HeroSectionComponent,
     MyPortfolioNavComponent,
     MyPortfolioItemComponent,
-    MyPortfolioContainerComponent
+    MyPortfolioContainerComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule

@@ -7,10 +7,7 @@ import {EmailService} from './services/email.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'myPortfolio';
   constructor(private emailService: EmailService) {}
 
-  sendEmailToUser(): void {
-    this.emailService.sendEmail('code.genius.contact@gmail.com', 'Test Subject', 'Test email body');
-  }
+
 }

@@ -6,9 +6,13 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./my-portfolio-nav.component.css']
 })
 export class MyPortfolioNavComponent {
-  @Output() categorySelected = new EventEmitter<string>();
+  selectedFilter: string = '*';
+  @Output() filter: EventEmitter<string> = new EventEmitter<string>();
 
-  selectCategory(category: string) {
-    this.categorySelected.emit(category);
+  constructor() { }
+
+  applyFilter(filter: string) {
+    this.selectedFilter = filter;
+    this.filter.emit(filter);
   }
 }

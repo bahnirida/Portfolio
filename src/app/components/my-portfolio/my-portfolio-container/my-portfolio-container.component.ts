@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./my-portfolio-container.component.css']
 })
 export class MyPortfolioContainerComponent {
-  @Input() portfolioItems : any;
+  @Input() portfolioItems : any[]=[];
 }

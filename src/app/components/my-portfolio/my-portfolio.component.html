@@ -6,11 +6,13 @@
     </div>
     <app-my-portfolio-nav (filter)="applyFilter($event)"></app-my-portfolio-nav>
     <div class="row portfolio-container">
-      <div *ngFor="let item of portfolioItems" [attr.data-wow-delay]="item.delay">
-        <app-my-portfolio-item class="portfolio-wrap" [item]="item"></app-my-portfolio-item>
-      </div>
+        <div *ngFor="let item of filteredItems" class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" [attr.data-wow-delay]="item.delay">
+          <div class="portfolio-wrap">
+          <app-my-portfolio-item class="portfolio-wrap" [item]="item"></app-my-portfolio-item>
+          </div>
+        </div>
     </div>
   </div>
 </div>
   <!-- Portfolio End -->
- 
+
