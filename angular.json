@@ -29,7 +29,6 @@
               "src/styles.css",
               "src/assets/css/style.css",
               "src/assets/lib/animate/animate.min.css",
-              "src/assets/lib/lightbox/css/lightbox.min.css",
               "src/assets/lib/owlcarousel/assets/owl.carousel.min.css"
             ],
             "scripts": [
@@ -42,9 +41,7 @@
               "src/assets/lib/typed/typed.min.js",
               "src/assets/lib/owlcarousel/owl.carousel.min.js",
               "src/assets/lib/isotope/isotope.pkgd.min.js",
-              "src/assets/lib/lightbox/js/lightbox.min.js",
               "src/assets/mail/jqBootstrapValidation.min.js",
-              "src/assets/mail/contact.js",
               "src/assets/js/main.js"
             ]
           },
